@@ -1,16 +1,28 @@
 .title-component {
-  width: fit-content;
+	width: fit-content;
 
-  &__main-title {
-    font-size: 60px;
-    line-height: 78px;
-    background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+	&__main-title {
+		font-size: 60px;
+		line-height: 78px;
+		background-image: linear-gradient(
+			to right,
+			#ff8177 0%,
+			#ff867a 0%,
+			#ff8c7f 21%,
+			#f99185 52%,
+			#cf556c 78%,
+			#b12a5b 100%
+		);
+		background-size: cover;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-  &__main-subtitle {
-    max-width: 720px;
-  }
+	&__main-subtitle,
+	&__description {
+		font-size: 32px;
+		font-weight: normal;
+		line-height: 42px;
+		max-width: 720px;
+	}
 }
