@@ -1,0 +1,39 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+
+	padding: 18px;
+
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+
+	&__number {
+		font-size: 3em;
+		font-weight: bold;
+		text-align: left;
+		letter-spacing: -0.25em;
+		position: absolute;
+	}
+
+	&__content {
+		margin-left: 3rem;
+		padding: 0 0.75em;
+	}
+
+	&__title {
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	&__description {
+	}
+
+	&__source {
+	}
+}
