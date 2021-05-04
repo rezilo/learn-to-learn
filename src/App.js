@@ -22,8 +22,10 @@ function App() {
 
 	return (
 		<div className="app app--background">
-			<div className="app--content">
+			<div className="app__title">
 				<Title header={title} mainTitle={mainTitle} mainSubtitle={mainSubtitle} />
+			</div>
+			<div className="app__content">
 				<div className="app__rules-list">
 					{rules.map((item, index) => {
 						return (
