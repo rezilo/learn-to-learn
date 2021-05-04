@@ -1,0 +1,11 @@
+.wave {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	& > svg > path {
+		fill: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	}
+}
