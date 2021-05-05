@@ -1,6 +1,7 @@
 import "./App.scss";
 import Title from "./Components/Title/Title";
 import Card from "./Components/Card/Card";
+import Wave from "./Components/Wave/Wave";
 import { messages } from "./assets/localization";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 			<div className="app__title">
 				<Title header={title} mainTitle={mainTitle} mainSubtitle={mainSubtitle} />
 			</div>
+			<Wave />
 			<div className="app__content">
 				<div className="app__rules-list">
 					{rules.map((item, index) => {
