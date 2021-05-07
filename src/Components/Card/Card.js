@@ -2,6 +2,7 @@ import "./Card.scss";
 
 function Card(props) {
 	const { number, title, description, sourceTitle, source } = props;
+
 	return (
 		<div className="card">
 			<div className="card__number card__number--gradient">{number}</div>
@@ -10,8 +11,9 @@ function Card(props) {
 				<p className="card__description">{description}</p>
 				{source ? (
 					<p className="card__source">
-						<a href="source" className="card__link">
-							{sourceTitle}
+						{sourceTitle}
+						<a href="sourceTitle" className="card__link">
+							тут
 						</a>
 					</p>
 				) : null}
