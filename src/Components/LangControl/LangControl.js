@@ -1,16 +1,13 @@
 import "./LangControl.scss";
 
 function LangControl(props) {
-	const onLangChange = (lang) => {
-		console.log(lang);
-	};
 	return (
 		<ul className="lang">
 			<li className="lang__item">
-				<button onClick={() => onLangChange("ru")}>🇷🇺</button>
+				<button onClick={() => props.changeLang("ru")}>🇷🇺</button>
 			</li>
 			<li className="lang__item">
-				<button onClick={() => onLangChange("en")}>🇺🇸</button>
+				<button onClick={() => props.changeLang("en")}>🇺🇸</button>
 			</li>
 		</ul>
 	);
