@@ -1,4 +1,5 @@
 import "./Card.scss";
+import Link from "../Link/Link";
 
 function Card(props) {
 	const { number, title, description, sourceTitle, source } = props;
@@ -9,13 +10,11 @@ function Card(props) {
 			<div className="card__content">
 				<h3 className="card__title">{title}</h3>
 				<p className="card__description">{description}</p>
-				{source ? (
-					<p className="card__source">
-						{sourceTitle}
-						<a href="sourceTitle" className="card__link">
-							тут
-						</a>
-					</p>
+				{source.length ? (
+					<div className="card__source">
+						<p>{sourceTitle}</p>
+						<Link links={source} />
+					</div>
 				) : null}
 			</div>
 		</div>
