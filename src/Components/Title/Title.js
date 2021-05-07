@@ -4,7 +4,7 @@ import LangControl from "../LangControl/LangControl";
 function Title(props) {
 	return (
 		<div className="title-component">
-			<LangControl />
+			<LangControl changeLang={props.changeLang} />
 
 			<h1 className="title-component__main-title">Учись учиться</h1>
 
