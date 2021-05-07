@@ -36,9 +36,8 @@ function App() {
 				<div className="app__rules-list">
 					{rules.map((item, index) => {
 						return (
-							<div className="app__rules-item">
+							<div className="app__rules-item" key={getUniqueId()}>
 								<Card
-									key={getUniqueId()}
 									number={index + 1}
 									title={item.title}
 									description={item.description}
