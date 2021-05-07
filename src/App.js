@@ -3,9 +3,11 @@ import Title from "./Components/Title/Title";
 import Card from "./Components/Card/Card";
 import Wave from "./Components/Wave/Wave";
 import { messages } from "./assets/localization";
+import { useState } from "react";
 
 function App() {
 	const userLang = navigator.userLang || navigator.language;
+	const [lang, setLang] = useState(userLang.slice(0, 2));
 
 	function getLocalization(local) {
 		return messages[local];
@@ -14,17 +16,20 @@ function App() {
 	function getUniqueId() {
 		const min = Math.ceil(0);
 		const max = Math.floor(999);
-		return Math.floor(Math.random() * (max - min)) + min;
+		return (Math.floor(Math.random() * (max - min)) + min).toString();
 	}
 
-	const content = getLocalization(userLang.slice(0, 2));
-	const { title, mainTitle, mainSubtitle, source } = content;
-	const rules = content.rules;
+	function changeLang(lang) {
+		setLang(lang);
+	}
+
+	const content = getLocalization(lang);
+	const { title, mainTitle, mainSubtitle, source, rules } = content;
 
 	return (
 		<div className="app app--background">
 			<div className="app__title">
-				<Title header={title} mainTitle={mainTitle} mainSubtitle={mainSubtitle} />
+				<Title header={title} mainTitle={mainTitle} mainSubtitle={mainSubtitle} changeLang={changeLang} />
 			</div>
 			<Wave />
 			<div className="app__content">
