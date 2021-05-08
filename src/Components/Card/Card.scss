@@ -45,5 +45,7 @@
 	}
 
 	&__source {
+		display: flex;
+		align-items: baseline;
 	}
 }
