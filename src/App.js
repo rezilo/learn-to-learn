@@ -24,12 +24,12 @@ function App() {
 	}
 
 	const content = getLocalization(lang);
-	const { title, mainTitle, mainSubtitle, source, rules } = content;
+	const { title, mainTitle, mainSubtitle, source, linkWrapper, rules } = content;
 
 	return (
 		<div className="app app--background">
 			<div className="app__title">
-				<Title header={title} mainTitle={mainTitle} mainSubtitle={mainSubtitle} changeLang={changeLang} />
+				<Title header={title} title={mainTitle} subtitle={mainSubtitle} changeLang={changeLang} />
 			</div>
 			<Wave />
 			<div className="app__content">
@@ -43,6 +43,7 @@ function App() {
 									description={item.description}
 									sourceTitle={source}
 									source={item.source}
+									wrapper={linkWrapper}
 								/>
 							</div>
 						);
