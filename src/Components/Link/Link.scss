@@ -1,0 +1,13 @@
+a {
+	padding-left: 8px;
+	position: relative;
+
+	&::after {
+		content: ", ";
+		position: absolute;
+	}
+
+	&:last-child::after {
+		content: "";
+	}
+}
