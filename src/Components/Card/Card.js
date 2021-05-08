@@ -2,7 +2,8 @@ import "./Card.scss";
 import Link from "../Link/Link";
 
 function Card(props) {
-	const { number, title, description, sourceTitle, source } = props;
+	console.log(props);
+	const { number, title, description, sourceTitle, source, wrapper } = props;
 
 	return (
 		<div className="card">
@@ -13,7 +14,7 @@ function Card(props) {
 				{source.length ? (
 					<div className="card__source">
 						<p>{sourceTitle}</p>
-						<Link links={source} />
+						<Link links={source} linkWrapper={wrapper} />
 					</div>
 				) : null}
 			</div>

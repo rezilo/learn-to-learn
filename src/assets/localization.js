@@ -2,9 +2,10 @@ export const messages = {
 	ru: {
 		title: "Учись учиться",
 		source: "Больше по теме: ",
+		linkWrapper: "тут",
 		mainTitle:
 			"Нам необходимо учиться чтобы оставаться востребованными в любой сфере деятельности. Но как это делать эффективно? Для начала нужно научиться учиться! ",
-		mainSubtitle: "Ниже список из 10 техник которые позволяют мне вот уже семь лет делать это эффективно.",
+		mainSubtitle: "Ниже список из 10 пунктов которые позволяют мне вот уже семь лет делать это эффективно.",
 		rulesTitle: "Так что же делать?",
 		rules: [
 			{
@@ -105,10 +106,10 @@ export const messages = {
 	en: {
 		title: "Learn to learn",
 		source: "To learn more: ",
+		linkWrapper: "this",
 		mainTitle:
 			"We need to learn to stay in demand in any field of activity. But how can this be done effectively? First you need to learn how to learn!",
-		mainSubtitle:
-			"Below is a list of 10 techniques that have allowed me to do this effectively for seven years now.",
+		mainSubtitle: "Below is a list of 10 items that allow me to do this effectively for seven years.",
 		rules: [
 			{
 				title: "Collection of information",
