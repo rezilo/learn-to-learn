@@ -1,10 +1,11 @@
 import "./Link.scss";
 
 function Link(props) {
+	console.log(props);
 	return props.links.map((link, i) => {
 		return (
 			<a href={link} key={i} className="card__link">
-				тут
+				{props.linkWrapper}
 			</a>
 		);
 	});
