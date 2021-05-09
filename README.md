@@ -1,5 +1,5 @@
 # Learn to learn
-[![Netlify Status](https://api.netlify.com/api/v1/badges/65a86fa8-29cd-4000-9ec2-ac175ee2ce14/deploy-status)](https://app.netlify.com/sites/learn-to-study/deploys)
+![Netlify Status](https://api.netlify.com/api/v1/badges/65a86fa8-29cd-4000-9ec2-ac175ee2ce14/deploy-status)
 
 A page helping people to learn productive
 
