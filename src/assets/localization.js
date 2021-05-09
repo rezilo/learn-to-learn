@@ -104,7 +104,7 @@ export const messages = {
 		],
 	},
 	en: {
-		title: "Learn to learn",
+		title: "Learn to study",
 		source: "To learn more: ",
 		linkWrapper: "this",
 		mainTitle:
