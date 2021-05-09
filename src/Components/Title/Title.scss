@@ -2,7 +2,10 @@
 	width: fit-content;
 
 	&__main-title {
-		font-size: 60px;
+		margin-top: 0px;
+		padding: 0 24px;
+		font-size: 3em;
+		font-weight: bold;
 		line-height: 78px;
 		background-image: linear-gradient(175deg, #30cfd0 0%, #330867 100%);
 		background-size: cover;
@@ -12,9 +15,24 @@
 
 	&__main-subtitle,
 	&__description {
-		font-size: 32px;
+		padding: 0 24px;
+		font-size: 2em;
 		font-weight: normal;
 		line-height: 42px;
 		max-width: 720px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.title-component {
+		&__main-title {
+			line-height: 48px;
+			padding-bottom: 10px;
+		}
+
+		&__main-subtitle,
+		&__description {
+			line-height: 42px;
+		}
 	}
 }
