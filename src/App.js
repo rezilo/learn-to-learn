@@ -2,6 +2,7 @@ import "./App.scss";
 import Title from "./Components/Title/Title";
 import Card from "./Components/Card/Card";
 import Wave from "./Components/Wave/Wave";
+import Footer from "./Components/Footer/Footer";
 import { messages } from "./assets/localization";
 import { useState, useEffect } from "react";
 
@@ -54,6 +55,7 @@ function App() {
 					})}
 				</div>
 			</div>
+			<Footer lang={lang} />
 		</div>
 	);
 }

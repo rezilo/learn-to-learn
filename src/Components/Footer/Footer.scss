@@ -1,0 +1,15 @@
+.footer {
+	background-color: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	& > p {
+		padding: 10px;
+	}
+
+	& > p > a {
+		padding: 0;
+	}
+}
