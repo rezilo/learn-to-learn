@@ -2,7 +2,6 @@ import "./Card.scss";
 import Link from "../Link/Link";
 
 function Card(props) {
-	console.log(props);
 	const { number, title, description, sourceTitle, source, wrapper } = props;
 
 	return (
