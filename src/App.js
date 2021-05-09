@@ -3,7 +3,7 @@ import Title from "./Components/Title/Title";
 import Card from "./Components/Card/Card";
 import Wave from "./Components/Wave/Wave";
 import { messages } from "./assets/localization";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
 	const userLang = navigator.userLang || navigator.language;
@@ -25,6 +25,10 @@ function App() {
 
 	const content = getLocalization(lang);
 	const { title, mainTitle, mainSubtitle, source, linkWrapper, rules } = content;
+
+	useEffect(() => {
+		document.title = title;
+	});
 
 	return (
 		<div className="app app--background">
